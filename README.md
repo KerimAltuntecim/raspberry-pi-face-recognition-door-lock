@@ -85,6 +85,6 @@ Depo kökündeki `camera_capture_example.py`, `camera_frame_example.py`, `gpio_o
 - Fiziksel kilit sürücüsü için fail-safe tasarım ve elektriksel izolasyon
 - Kurulum ve bakım adımlarının otomatikleştirilmesi
 
-## Lisans
+## Kaynak kullanım notu
 
-Dokümantasyon ve örnek kodlar MIT lisansı ile paylaşılmıştır. Özgün bitirme projesi kaynak kodu bu lisans kapsamında yayınlanmamıştır.
+Bu depo kaynak kodu ve proje yaklaşımını portföy incelemesi amacıyla paylaşır. Kodun yeniden kullanılması, dağıtılması veya ticari bir ürüne dahil edilmesi için yazardan ayrıca izin alınmalıdır.
