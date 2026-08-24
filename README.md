@@ -56,7 +56,7 @@ Bu sonuçlar prototip testlerine aittir; üretim seviyesinde güvenlik veya geli
 
 ## Paylaşılan örnekler
 
-Depo kökündeki `camera_frame_example.py`, `gpio_output_example.py` ve `state_flow_example.py` dosyaları, gerçek projede kullanılan genel teknik desenlerin temizlenmiş örnekleridir. Kamera-kare dönüşümü, GPIO çıkışı hazırlama ve durum akışını gösterir; tek başına tam uygulama değildir ve özgün eşik/depolama ayrıntılarını içermez.
+Depo kökündeki `camera_capture_example.py`, `camera_frame_example.py`, `gpio_output_example.py`, `qt_timer_example.py` ve `state_flow_example.py` dosyaları, gerçek projede kullanılan genel teknik desenlerin temizlenmiş örnekleridir. Kamera yaşam döngüsü, kare dönüşümü, GPIO çıkışı hazırlama, Qt zamanlayıcısı ve durum akışını gösterir; tek başına tam uygulama değildir ve özgün eşik/depolama ayrıntılarını içermez.
 
 ## Gizlilik ve güvenlik
 
