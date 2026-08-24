@@ -29,6 +29,18 @@ Dokümantasyon odaklı bir Raspberry Pi 4 akıllı kapı kilidi prototipi. Siste
 
 Bu kurulum yönergeleri eğitim/prototip kullanımı içindir. Model dosyalarının lisansları ayrıca kontrol edilmelidir.
 
+## Kullanılan açık kaynak bileşenler
+
+Bu projede kullanılan yüz algılama ve yüz tanıma modelleri OpenCV Zoo'daki ilgili model paketleriyle uyumludur:
+
+- **YuNet** (`face_detection_yunet_2023mar.onnx`) — MIT License.
+- **SFace** (`face_recognition_sface_2021dec.onnx`) — Apache License 2.0.
+- **OpenCV** — Apache License 2.0.
+
+Model dosyaları bu depoya dahil edilmemiştir. Model dosyaları ayrıca dağıtılacaksa ilgili lisans ve telif bildirimleri korunmalıdır.
+
+Kaynaklar: [YuNet model ve lisansı](https://github.com/opencv/opencv_zoo/tree/main/models/face_detection_yunet), [SFace model ve lisansı](https://github.com/opencv/opencv_zoo/tree/main/models/face_recognition_sface), [OpenCV lisansı](https://github.com/opencv/opencv/blob/4.x/LICENSE).
+
 ## Sistem akışı
 
 ```text
@@ -65,10 +77,6 @@ Bu sonuçlar prototip testlerine aittir; üretim seviyesinde güvenlik veya geli
 | Kısmi yüz kapatma | Ortama göre düşen başarı |
 | Bilinmeyen kişi / fotoğraf | Kilit açılmaması beklenir |
 | Performans | Boşta yaklaşık 8 FPS; doğrulamada yaklaşık 6–7 FPS |
-
-## Paylaşılan örnekler
-
-Depo kökündeki `camera_capture_example.py`, `camera_frame_example.py`, `gpio_output_example.py`, `qt_timer_example.py` ve `state_flow_example.py` dosyaları, gerçek projede kullanılan genel teknik desenlerin temizlenmiş örnekleridir. Kamera yaşam döngüsü, kare dönüşümü, GPIO çıkışı hazırlama, Qt zamanlayıcısı ve durum akışını gösterir; tek başına tam uygulama değildir ve özgün eşik/depolama ayrıntılarını içermez.
 
 ## Gizlilik ve güvenlik
 
