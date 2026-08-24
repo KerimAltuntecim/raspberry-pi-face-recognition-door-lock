@@ -17,6 +17,18 @@ Dokümantasyon odaklı bir Raspberry Pi 4 akıllı kapı kilidi prototipi. Siste
 - Kayıt sırasında farklı yüz açılarıyla veri toplama
 - Doğrulama sonrası basit baş hareketi challenge-response adımı
 
+## Kaynak kod ve kurulum
+
+`face_engine.py` ve `main_gui.py`, projenin temizlenmiş public kaynak kodudur. Model dosyaları, Piper ses modeli, ikonlar ve kullanıcı kayıtları depoya dahil edilmemiştir.
+
+1. Raspberry Pi üzerinde Python 3.10+ ortamı oluşturun.
+2. `pip install -r requirements.txt` komutunu çalıştırın ve Raspberry Pi GPIO paketini kurun.
+3. YuNet, SFace ve isteğe bağlı Piper model dosyalarını `models/` klasörüne yerleştirin.
+4. Gerekirse `.env.example` içindeki yolları ortam değişkeni olarak ayarlayın.
+5. `python main_gui.py` ile arayüzü başlatın.
+
+Bu kurulum yönergeleri eğitim/prototip kullanımı içindir. Model dosyalarının lisansları ayrıca kontrol edilmelidir.
+
 ## Sistem akışı
 
 ```text

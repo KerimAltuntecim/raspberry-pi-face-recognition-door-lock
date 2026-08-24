@@ -10,3 +10,6 @@ audio/
 *.sqlite3
 .env
 config.local.*
+models/
+system_audio/
+icons/

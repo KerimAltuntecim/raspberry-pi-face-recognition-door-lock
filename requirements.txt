@@ -1,0 +1,6 @@
+numpy
+opencv-python
+PySide6
+
+# Raspberry Pi üzerinde ayrıca GPIO kütüphanesi gerekir:
+# RPi.GPIO
