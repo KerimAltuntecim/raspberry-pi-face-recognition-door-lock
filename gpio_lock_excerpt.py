@@ -1,4 +1,8 @@
-"""GPIO kilit çıkışının güvenli ve kısaltılmış gösterimi."""
+"""GPIO kilit çıkışının güvenli ve kısaltılmış gösterimi.
+
+Bu dosya fiziksel kilit sürücüsü için üretim kodu değildir; çıkış durumunun
+doğrulama sonucu ile nasıl ilişkilendirildiğini anlatır.
+"""
 
 LOCK_OUTPUT = 17  # Prototipte kullanılan GPIO hattı
 

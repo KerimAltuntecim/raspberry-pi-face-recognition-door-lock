@@ -1,5 +1,7 @@
 # Raspberry Pi Face Recognition Door Lock
 
+**English summary:** Documentation-only portfolio of a Raspberry Pi 4 smart door-lock prototype using OpenCV face recognition, PySide6 and GPIO control.
+
 Dokümantasyon odaklı bir Raspberry Pi 4 akıllı kapı kilidi prototipi. Sistem, USB kamera ile yüz algılama ve tanıma yapar; doğrulama sonrasında GPIO üzerinden kilit durumunu temsil eden bir çıkışı kontrol eder.
 
 > Bu depo portföy amacıyla hazırlanmıştır. Özgün proje kaynak kodu, kullanıcı yüz verileri, yüz gömüleri, ses kayıtları ve kişisel bilgiler paylaşılmamıştır.
@@ -43,6 +45,15 @@ Tezdeki prototip ölçümlerine göre kayıtlı kullanıcı doğrulaması kontro
 
 Bu sonuçlar prototip testlerine aittir; üretim seviyesinde güvenlik veya gelişmiş anti-spoofing garantisi olarak değerlendirilmemelidir.
 
+| Senaryo | Gözlem |
+|---|---|
+| Kayıtlı kullanıcı / aynı ortam | 10/10 doğrulama |
+| Kayıtlı kullanıcı / farklı ortam | 10/10 doğrulama |
+| Gözlüksüz doğrulama | 9–10/10 aralığı |
+| Kısmi yüz kapatma | Ortama göre düşen başarı |
+| Bilinmeyen kişi / fotoğraf | Kilit açılmaması beklenir |
+| Performans | Boşta yaklaşık 8 FPS; doğrulamada yaklaşık 6–7 FPS |
+
 ## Paylaşılan örnekler
 
 `face_pipeline_excerpt.py` ve `gpio_lock_excerpt.py` dosyaları, gerçek uygulamanın güvenli ve kısaltılmış anlatım örnekleridir. GitHub web yüklemesi nedeniyle dosyalar depo kökünde tutulmuştur. Tek başına çalıştırılabilir tam uygulama değildir ve özgün eşik/depolama ayrıntılarını içermez.
@@ -53,6 +64,14 @@ Bu sonuçlar prototip testlerine aittir; üretim seviyesinde güvenlik veya geli
 - Gerçek kullanıcı kayıt klasörleri ve cihaz kimlik bilgileri paylaşılmaz.
 - Challenge-response burada yalnızca deneysel bir canlılık kontrolüdür; tek başına güvenli erişim sistemi değildir.
 - Gerçek kapı kilidi uygulamasında güvenli muhafaza, erişim günlüğü, hata durumları ve ek anti-spoofing katmanları gerekir.
+
+## Gelecek geliştirmeler
+
+- Daha güçlü canlılık tespiti ve spoofing önleme
+- Raspberry Pi için daha iyi soğutma ve uzun süreli yük testi
+- Güvenli kullanıcı/veri depolama ve erişim günlüğü
+- Fiziksel kilit sürücüsü için fail-safe tasarım ve elektriksel izolasyon
+- Kurulum ve bakım adımlarının otomatikleştirilmesi
 
 ## Lisans
 
