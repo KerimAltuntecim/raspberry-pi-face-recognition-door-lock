@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+users/
+faces/
+embeddings/
+audio/
+*.db
+*.sqlite3
+.env
+config.local.*
